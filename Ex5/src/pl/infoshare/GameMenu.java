@@ -1,5 +1,7 @@
 package pl.infoshare;
 
+import pl.infoshare.Questions.Category1Q;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -30,26 +32,29 @@ public class GameMenu {
     }
     public static void categoryInterface() {
 
-                System.out.println("(1) - Muzyka i Hity");
-                System.out.println("(2) - Rozrywka");
-                System.out.println("(3) - Dziki instynkt");
-                System.out.println("(4) - Na duzym ekranie");
-                System.out.println("(5) - Historia");
-                System.out.println("(6) - Ksiązki i słowa");
-                System.out.println("(7) - Sport");
-                System.out.println("(8) - Geografia");
-                System.out.println("(9) - Biologia");
-                System.out.println("(10) - Film polski");
-                System.out.println("(11) - League of Legends");
-                System.out.println("(12) - Liverpool F.C");
-                System.out.println("(13) - Piłka nożna");
+                System.out.println("(1) - " + Category.MUSICANDHITS);
+                System.out.println("(2) - " + Category.ENTERTAINMENT);
+                System.out.println("(3) - " + Category.WILDiNSTINCT);
+                System.out.println("(4) - " + Category.ONBIGSCREEN);
+                System.out.println("(5) - " + Category.HISTORY);
+                System.out.println("(6) - " + Category.BOOKANDWORDS);
+                System.out.println("(7) - " + Category.SPORT);
+                System.out.println("(8) - " + Category.GEOGRAPHY);
+                System.out.println("(9) - " + Category.BIOLOGY);
+                System.out.println("(10) - " + Category.POLISHFILM);
+                System.out.println("(11) - " + Category.LEAGUEOFLEGENDS);
+                System.out.println("(12) - " + Category.LIVERPOOLFC);
+                System.out.println("(13) - " + Category.FOOTBALL);
                 System.out.println("(14) - Exit");
 
                 Scanner scanner = new Scanner(System.in);
                 int numberOfCategory = scanner.nextInt();
 
+                if(numberOfCategory == 1) {
+                    Category1Q.musicAndHitsCategory();
+                    }
+                }
+
         }
 
-
-    }
 
