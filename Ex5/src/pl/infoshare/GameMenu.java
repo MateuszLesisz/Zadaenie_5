@@ -75,6 +75,9 @@ public class GameMenu {
                     case 8:
                         GeographyQ.logicCategory();
                         break;
+                    case 9:
+                        BiologyQ.logicCategory();
+                        break;
 
                 }
                 }
