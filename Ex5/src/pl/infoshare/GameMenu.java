@@ -1,5 +1,6 @@
 package pl.infoshare;
 
+import pl.infoshare.answears.LiverpoolFCA;
 import pl.infoshare.questions.*;
 
 import java.util.InputMismatchException;
@@ -78,6 +79,16 @@ public class GameMenu {
                     case 9:
                         BiologyQ.logicCategory();
                         break;
+                    case 10 :
+                        PolishFilmQ.logicCategory();
+                    case 11:
+                        LeagueOfLegendsQ.logicCategory();
+                    case 12:
+                        LiverpoolFCQ.logicCategory();
+                    case 13:
+                        FootballQ.logicCategory();
+                    case 14:
+                        System.out.println("Hopu u will comeback someday :)");
 
                 }
                 }
