@@ -1,6 +1,6 @@
 package pl.infoshare;
 
-import pl.infoshare.Questions.Category1Q;
+import pl.infoshare.questions.Category1Q;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -47,13 +47,34 @@ public class GameMenu {
                 System.out.println("(13) - " + Category.FOOTBALL);
                 System.out.println("(14) - Exit");
 
-                Scanner scanner = new Scanner(System.in);
-                int numberOfCategory = scanner.nextInt();
-
-                if(numberOfCategory == 1) {
-                    Category1Q.musicAndHitsCategory();
-                    }
+                int choice;
+                int numberOfChoices = 14;
+                choice = choiceChecker(numberOfChoices);
+                switch(choice) {
+                    case 1:
+                        Category1Q.musicAndHitsCategory();
                 }
+                }
+
+    public static int choiceChecker(int amount) {
+        int choice = 0;
+        boolean condition = true;
+
+        while (condition) {
+            try {
+                Scanner scanner = new Scanner(System.in);
+                choice = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("Give me correct number.");
+            }
+            if (choice > amount || choice <= 0) {
+                System.out.println("Give a number from 1 to " + amount);
+            } else {
+                condition = false;
+            }
+        }
+        return choice;
+    }
 
         }
 
