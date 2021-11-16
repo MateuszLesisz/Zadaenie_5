@@ -1,6 +1,6 @@
 package pl.infoshare;
 
-import pl.infoshare.questions.Category1Q;
+import pl.infoshare.questions.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -52,7 +52,30 @@ public class GameMenu {
                 choice = choiceChecker(numberOfChoices);
                 switch(choice) {
                     case 1:
-                        Category1Q.logicCategory();
+                        MusicAndHitsQ.logicCategory();
+                        break;
+                    case 2:
+                        EntertainmentQ.logicCategory();
+                        break;
+                    case 3:
+                        WildInstinctQ.logicCategory();
+                        break;
+                    case 4:
+                        OnBigScreenQ.logicCategory();
+                        break;
+                    case 5:
+                        HistoryQ.logicCategory();
+                        break;
+                    case 6:
+                        BooksAndWordsQ.logicCategory();
+                        break;
+                    case 7:
+                        SportQ.logicCategory();
+                        break;
+                    case 8:
+                        GeographyQ.logicCategory();
+                        break;
+
                 }
                 }
 
