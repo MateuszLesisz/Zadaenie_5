@@ -52,7 +52,7 @@ public class GameMenu {
                 choice = choiceChecker(numberOfChoices);
                 switch(choice) {
                     case 1:
-                        Category1Q.musicAndHitsCategory();
+                        Category1Q.logicCategory();
                 }
                 }
 

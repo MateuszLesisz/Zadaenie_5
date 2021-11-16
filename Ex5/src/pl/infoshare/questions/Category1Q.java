@@ -1,5 +1,6 @@
 package pl.infoshare.questions;
 
+import pl.infoshare.GameMenu;
 import pl.infoshare.answears.Category1A;
 
 import java.util.ArrayList;
@@ -8,17 +9,16 @@ import java.util.List;
 import java.util.Random;
 
 public class Category1Q {
+    private static String question1 = "Jaki tytuł miał pierwszy album zespołu Nirvana?";
+    private static String question2 = "Kto wykonuje utwór Wake me up when september ends?";
+    private static String question3 = "W którym roku powstał polski zespół rockowy MUTE?";
+    private static String question4 = "Który z tych artystów w 2021 r. został odznaczony Fryderykiem za album roku w kategorii Hip-Hop?";
+    private static String question5 = "W jakim mieście został założony zespół Bajm?";
 
-    private Category1Q() {
-    }
 
-    public static void musicAndHitsCategory() {
 
-        String question1 = "Jaki tytuł miał pierwszy album zespołu Nirvana?";
-        String question2 = "Kto wykonuje utwór Wake me up when september ends?";
-        String question3 = "W którym roku powstał polski zespół rockowy MUTE?";
-        String question4 = "Który z tych artystów w 2021 r. został odznaczony Fryderykiem za album roku w kategorii Hip-Hop?";
-        String question5 = "W jakim mieście został założony zespół Bajm?";
+    public static void logicCategory() {
+
 
         List<String> list = new ArrayList<>();
         list.add(question1);

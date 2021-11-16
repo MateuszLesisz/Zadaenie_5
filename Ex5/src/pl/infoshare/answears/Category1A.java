@@ -1,13 +1,13 @@
 package pl.infoshare.answears;
 
 import java.util.HashMap;
-import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Category1A {
     private static final String CORRECT_ANSWEAR = "Correct answear!";
     private static final String WRONG_ANSWEAR = "I am sorry you are wrong. Correct answear is: ";
+    private static final String ANOTHER_ANSWEAR = "Type correct letter.";
 
     public static void answearsC1Q1() {
         Map<Integer, String> map = new HashMap<>();
@@ -18,13 +18,22 @@ public class Category1A {
         System.out.println("b. " + map.get(2));
         System.out.println("c. " + map.get(3));
 
+        while (true) {
         Scanner scanner = new Scanner(System.in);
         String answear = scanner.nextLine();
 
-        if (answear.equals("a")) {
-            System.out.println(CORRECT_ANSWEAR);
-        } else {
-            System.out.println(WRONG_ANSWEAR + map.get(1));
+            if (answear.equalsIgnoreCase("a")) {
+                System.out.println(CORRECT_ANSWEAR);
+                break;
+            } else if (answear.equalsIgnoreCase("b")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else if (answear.equalsIgnoreCase("c")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else {
+                System.out.println(ANOTHER_ANSWEAR);
+            }
         }
     }
 
@@ -37,13 +46,22 @@ public class Category1A {
         System.out.println("b. " + map.get(2));
         System.out.println("c. " + map.get(3));
 
-        Scanner scanner = new Scanner(System.in);
-        String answear = scanner.nextLine();
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            String answear = scanner.nextLine();
 
-        if (answear.equals("b")) {
-            System.out.println(CORRECT_ANSWEAR);
-        } else {
-            System.out.println(WRONG_ANSWEAR + map.get(2));
+            if (answear.equalsIgnoreCase("b")) {
+                System.out.println(CORRECT_ANSWEAR);
+                break;
+            } else if (answear.equalsIgnoreCase("a")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else if (answear.equalsIgnoreCase("c")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else {
+                System.out.println(ANOTHER_ANSWEAR);
+            }
         }
     }
 
@@ -56,13 +74,22 @@ public class Category1A {
         System.out.println("b. " + map.get(2));
         System.out.println("c. " + map.get(3));
 
-        Scanner scanner = new Scanner(System.in);
-        String answear = scanner.nextLine();
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            String answear = scanner.nextLine();
 
-        if (answear.equals("c")) {
-            System.out.println(CORRECT_ANSWEAR);
-        } else {
-            System.out.println(WRONG_ANSWEAR + map.get(3));
+            if (answear.equalsIgnoreCase("c")) {
+                System.out.println(CORRECT_ANSWEAR);
+                break;
+            } else if (answear.equalsIgnoreCase("b")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else if (answear.equalsIgnoreCase("a")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else {
+                System.out.println(ANOTHER_ANSWEAR);
+            }
         }
     }
 
@@ -75,13 +102,22 @@ public class Category1A {
         System.out.println("b. " + map.get(2));
         System.out.println("c. " + map.get(3));
 
-        Scanner scanner = new Scanner(System.in);
-        String answear = scanner.nextLine();
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            String answear = scanner.nextLine();
 
-        if (answear.equals("b")) {
-            System.out.println(CORRECT_ANSWEAR);
-        } else {
-            System.out.println(WRONG_ANSWEAR + map.get(2));
+            if (answear.equalsIgnoreCase("b")) {
+                System.out.println(CORRECT_ANSWEAR);
+                break;
+            } else if (answear.equalsIgnoreCase("a")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else if (answear.equalsIgnoreCase("c")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else {
+                System.out.println(ANOTHER_ANSWEAR);
+            }
         }
     }
 
@@ -94,13 +130,22 @@ public class Category1A {
         System.out.println("b. " + map.get(2));
         System.out.println("c. " + map.get(3));
 
-        Scanner scanner = new Scanner(System.in);
-        String answear = scanner.nextLine();
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            String answear = scanner.nextLine();
 
-        if (answear.equals("a")) {
-            System.out.println(CORRECT_ANSWEAR);
-        } else {
-            System.out.println(WRONG_ANSWEAR + map.get(1));
+            if (answear.equalsIgnoreCase("a")) {
+                System.out.println(CORRECT_ANSWEAR);
+                break;
+            } else if (answear.equalsIgnoreCase("b")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else if (answear.equalsIgnoreCase("c")) {
+                System.out.println(WRONG_ANSWEAR + map.get(1));
+                break;
+            } else {
+                System.out.println(ANOTHER_ANSWEAR);
+            }
         }
     }
-}
+    }
