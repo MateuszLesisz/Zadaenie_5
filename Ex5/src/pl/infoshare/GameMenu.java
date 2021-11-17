@@ -54,41 +54,56 @@ public class GameMenu {
                 switch(choice) {
                     case 1:
                         MusicAndHitsQ.logicCategory();
+                        startIterface();
                         break;
                     case 2:
                         EntertainmentQ.logicCategory();
+                        startIterface();
                         break;
                     case 3:
                         WildInstinctQ.logicCategory();
+                        startIterface();
                         break;
                     case 4:
                         OnBigScreenQ.logicCategory();
+                        startIterface();
                         break;
                     case 5:
                         HistoryQ.logicCategory();
+                        startIterface();
                         break;
                     case 6:
                         BooksAndWordsQ.logicCategory();
+                        startIterface();
                         break;
                     case 7:
                         SportQ.logicCategory();
+                        startIterface();
                         break;
                     case 8:
                         GeographyQ.logicCategory();
+                        startIterface();
                         break;
                     case 9:
                         BiologyQ.logicCategory();
+                        startIterface();
                         break;
                     case 10 :
                         PolishFilmQ.logicCategory();
+                        startIterface();
                     case 11:
                         LeagueOfLegendsQ.logicCategory();
+                        startIterface();
                     case 12:
                         LiverpoolFCQ.logicCategory();
+                        startIterface();
                     case 13:
                         FootballQ.logicCategory();
+                        startIterface();
                     case 14:
                         System.out.println("Hopu u will comeback someday :)");
+
+
 
                 }
                 }

@@ -141,7 +141,7 @@ public class LiverpoolFCA {
                 } else if (answear.equalsIgnoreCase("c")) {
                     System.out.println(WRONG_ANSWEAR + map.get(1));
                     break;
-                } else if (answear.equalsIgnoreCase("a")) {
+                } else if (answear.equalsIgnoreCase("b")) {
                     System.out.println(WRONG_ANSWEAR + map.get(1));
                     break;
                 } else {

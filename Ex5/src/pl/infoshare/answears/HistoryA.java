@@ -57,7 +57,7 @@ public class HistoryA {
             } else if (answear.equalsIgnoreCase("a")) {
                 System.out.println(WRONG_ANSWEAR + map.get(3));
                 break;
-            } else if (answear.equalsIgnoreCase("c")) {
+            } else if (answear.equalsIgnoreCase("b")) {
                 System.out.println(WRONG_ANSWEAR + map.get(3));
                 break;
             } else {
