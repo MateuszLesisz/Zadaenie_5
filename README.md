@@ -1,4 +1,4 @@
-# Zadaenie_5# Zadanie 5 - Java Przetwarzanie Struktur Danych
+Zadanie 5 - Java Przetwarzanie Struktur Danych
 #### Zakres: Struktury danych, OOP
 
 
